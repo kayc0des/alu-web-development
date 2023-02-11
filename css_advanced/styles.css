@@ -1,278 +1,169 @@
-html * {
-	font-family: 'Source Sans Pro', sans-serif;
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Source Sans Pro";
+    font-style: normal;
 }
 
-.header {
-	width: 100%;
-	height: 100%;
-	background: url(../html_advanced/background.png);
-	background-size: cover;
+header {
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+    background-image: url("./images/banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2% 5% 2% 5%;
+    filter: grayscale(100%);
+    position: absolute;
+    left: -0.025%;
+    right: -0.025%;
+    top: 0%;
+    justify-content: space-between;
+    bottom: -26.48%;
+    height: 100vh;
+    
 }
 
-nav {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding-top: 20px;
-	padding-bottom: 15px;
-	padding-left: 12%;
-	padding-right: 12%;
+.urls {
+    font-weight: 700;
+    font-size: 12px;
+
 }
 
-nav ul li a {
-	color: white;
-	text-decoration: none;
-	font-weight: bold;
-	text-transform: capitalize;
+
+.urls>a {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FFFFFF;
+    padding-right: 53px;
+    text-transform: uppercase;
+    text-decoration: none;
 }
 
-nav ul li {
-	list-style: none;
-	display: inline-block;
-	padding: 10px 25px;
-}
-
-.nav ul li a:hover {
-	color: #071629;
-	transition: .4s;
-}
-
-.school {
-	position: absolute;
-	height: 151px;
-	left: 20%;
-	right: 20%;
-	top: calc(50% - 151px/2 - 251px);
-	font-style: normal;
-	font-weight: 700;
-	font-size: 120px;
-	line-height: 151px;
-	text-align: center;
-	color: #FFFFFF;
-}
-
-.smile {
-	position: absolute;
-	height: 20px;
-	left: 41.18%;
-	right: 55.21%;
-	top: calc(50% - 20px/2 - 175.5px);
-	font-style: normal;
-	font-weight: 700;
-	font-size: 16px;
-	line-height: 20px;
-	text-align: center;
-	color: #FFFFFF;
-}
-
-.grin {
-	position: absolute;
-	height:20px;
-	left: 48.89%;
-	right: 48.61%;
-	top: calc(50% - 20px/2 - 75.5px);
-	font-style: normal;
-	font-weight: 700;
-	font-size: 16px;
-	line-height: 20px;
-	text-align: center;
-	color: #FFFFFF;
-}
-
-.laugh {
-	position: absolute;
-	height: 20px;
-	left: 55.35%;
-	right: 41.25%;
-	top: calc(50% - 20px/2 - 175.5px);
-	font-family: 'Source Sans Pro';
-	font-style: normal;
-	font-weight: 700;
-	font-size: 16px;
-	line-height: 20px;
-	text-align: center;
-	color: #ffffff;
-}
-
-button {
-	position: absolute;
-	left: 44.38%;
-	right: 44.38%;
-	top: 38.33%;
-	bottom: 57.64%;
-	color: white;
-	border: solid transparent;
-	background: #C271FF;
-	border-radius: 22px;
-	filter: drop-shadow(0px 2px 20px rgba(0, 0, 0, 0.5));
-}
-
-strong {
-	color: #C271FF;
+.leading {
+    left: 20%;
+    right: 20%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -2.2rem;
+    background-blend-mode: color;
+    background: rgba(0, 0, 0, 1);
+    background: radial-gradient(85.9% 85.9% at 50% 14.1%,
+            rgba(41, 48, 61, 0.0001) 0%,
+            #071629 100%);
+    color: white;
 }
 
 .learn {
-	position: absolute;
-	height: 40px;
-	left: 41.94%;
-	right: 39.93%;
-	top: calc(50% - 40px/2 + 104,5px);
-	font-style: normal;
-	font-weight: 700;
-	font-size: 32px;
-	line-height: 40px;
-	text-align: center;
-	color: white;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5rem;
 }
 
-.mainpart {
-	position: absolute;
-	width: 1009px;
-	height: 237px;
-	left: 217px;
-	top: 758px;
+.learn>h1 {
+    height: 151px;
+    font-weight: 700;
+    font-size: 120px;
+    line-height: 151px;
+    text-align: center;
+    color: #ffffff;
+    z-index: 20;
 }
 
-.image {
-	border-radius: 50%;
-	left: 0%;
-	right: 0%;
-	top: 0;
-	bottom: 36.71%;
+.learn>p {
+    height: 20px;
+    position: relative;
+    margin-top: -5%;
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 38%;
+    margin-right: 38%;
 }
 
-.flex-container {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+.learn>button {
+    background: #c271ff;
+    border-radius: 25px;
+    border: none;
+    padding: 0.7rem;
+    color: white;
+    font-weight: 500;
+    box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.5);
+    position: relative;
+    align-self: center;
+    margin: 2rem;
+    padding: 1rem;
 }
 
-h2 {
-	text-align: center;
-	color: #ffffff;
+.dcolor {
+    color: #c271ff;
 }
 
-h5 {
-	text-align: center;
-	color: #ffffff;
+.courses {
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    z-index: 20;
 }
 
-h6 { 
-	text-align: center;
-	color: #ffffff;
+.courses>h2 {
+    align-self: center;
+    padding: 2rem;
+    font-weight: 300;
+    line-height: 40px;
 }
 
-.partone {
-	left: 15.07%;
-	right: 74.51%;
-	top: 69.35%;
-	bottom: 8.97;
+.courses .dcolor {
+    font-weight: 700;
 }
 
-.parttwo {
-	left: 35.14%;
-	right: 54.44%;
-	top: 69.35%;
-	bottom: 8.9%;
+.testim {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
-.partthree {
-	left: 54.65%;
-	right: 34.93;
-	top: 69.35%;
-	bottom: 8.97%;
+.testimCard {
+    width: 20%;
+    margin-bottom: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.partfour {
-	left: 74.72%;
-	right: 14.86%;
-	top: 69.35%;
-	bottom: 8.97%;
+.testimCard>img {
+    border-radius: 50%;
+    max-width: 80%;
 }
 
-.middle {
-	width: 100%;
-	height: 392px;
-	top: 1093px;
-	background: #C271FF;
+.testimCard > h3 {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    color: #FFFFFF;
 }
 
-.text {
-	padding-top: 120px;
-	justify-content: center;
-	align-items: center;
-	display: flex;
-	flex-direction: row;
+.testimCard>p {
+    height: 48px;
+    font-family: 'Source Sans Pro';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
 }
-
-.article {
-	padding-left: 50px;
-	text-align: start;
-}
-
-.start {
-	text-align: start;
-	padding-top: 50px;
-}
-
-.end {
-	text-align: start;
-}
-
-p {
-	color: white;
-}
-
-.strong {
-	color: #C271FF;
-}
-
-.trending {
-	color: #071629;
-	padding-left: 250px;
-	padding-top: 70px;
-}
-
-.popular {
-	width: 1226px;
-	height: 450px;
-	top: 1572px;
-	justify-content: center;
-}
-
-.tutorials {
-	padding-top: 50px;
-	justify-content: space-between;
-	display: flex;
-	align-items: center;
-	padding-left: 125px;
-	padding-right: 100px;
-}
-
-.tuto {
-	padding-left: 50px;
-}
-
-.freemembership {
-	width: 100%;
-	height: 350px;
-	background: #071629;
-}
-
-.membership {
-	justify-content: center;
-	align-items: center;
-	display: flex;
-}
-
-.free {
-	color: #c271ff;
-}
-
-.midclass {
-	color: white;
-	padding-top: 70px;
+main{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
 }
